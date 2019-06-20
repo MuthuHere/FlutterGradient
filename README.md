@@ -2,15 +2,26 @@
 
 A new Flutter application.
 
-## Getting Started
+<p align="center">
+  <img src="https://github.com/MuthuHere/FlutterGradient/blob/master/device-2019-06-20-104921.png" width="350" height="650" title="hover text">
+</p>
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+### Create a class for colors
+    class Palette{
+       ///color gradient
+      static Color blueSkyLight = Color(0x40068FFA);
+      static Color greenLandLight = Color(0x4089ED91);
+    }
 
-- [Lab: Write your first Flutter app](https://flutter.io/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.io/docs/cookbook)
+### Use that colors usign decoration
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.io/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+       Container(
+        ///for gradient background
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+            colors: [Palette.blueSkyLight, Palette.greenLandLight],
+          ),
+        ),
