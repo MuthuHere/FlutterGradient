@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               new IconTheme(
-                data: new IconThemeData(color: Colors.deepOrangeAccent),
+                data: new IconThemeData(color: Colors.purple),
                 child: new LayoutBuilder(builder: (context, constraint) {
                   return new Icon(
                     Icons.supervised_user_circle,
